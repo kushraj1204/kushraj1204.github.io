@@ -1188,3 +1188,9 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+.gitproject_button {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
