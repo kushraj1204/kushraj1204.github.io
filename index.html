@@ -53,9 +53,9 @@
       <h1>Kush Raj Rimal</h1>
       <p>I'm a <span class="typed" data-typed-items="Full Stack Developer"></span></p>
       <div class="social-links">
-        <a href="https://twitter.com/kushrajrimal" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://instagram.com/kushrajrimal" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/kush-raj-rimal-466789134/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a target="_blank" href="https://twitter.com/kushrajrimal" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a target="_blank" href="https://instagram.com/kushrajrimal" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/kush-raj-rimal-466789134/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
   </section><!-- End Hero -->
@@ -253,9 +253,9 @@
       <h3>Kush Raj Rimal</h3>
       <p></p>
       <div class="social-links">
-        <a href="https://twitter.com/kushrajrimal" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://instagram.com/kushrajrimal" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/kush-raj-rimal-466789134/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a target="_blank" href="https://twitter.com/kushrajrimal" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a target="_blank" href="https://instagram.com/kushrajrimal" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/kush-raj-rimal-466789134/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       
       </div>
       <div class="copyright">
@@ -293,7 +293,7 @@
   <div class="row">
   {{#each data}}
     <div class='gitproject_button col-md-4'>
-  <a class="btn btn-primary" href="{{html_url}}" role="button">{{name}}</a>
+  <a target="_blank" class="btn btn-primary" href="{{html_url}}" role="button">{{name}}</a>
 </div>
       {{/each}}
       </div>
@@ -305,11 +305,9 @@
           $.ajax({
             url: "https://api.github.com/users/kushraj1204/repos",
             success: function (data) {
-                console.log(data);
                 var projects = projects_template({
                             data: data
                         });
-                        console.log(projects,'projects')
                         container.html(projects);
             }
         });
